@@ -1,44 +1,4 @@
-# AWS EC2 Monitoring & Alerting
-
-A hands-on AWS cloud operations project focused on monitoring an Ubuntu EC2 server, configuring CloudWatch alarms, and sending infrastructure alerts through Amazon SNS.
-
-## Project Overview
-
-This project demonstrates how to monitor the health and performance of an AWS EC2 instance using Amazon CloudWatch.
-
-A CloudWatch alarm is configured to monitor CPU utilization. When CPU usage crosses the configured threshold, the alarm triggers an Amazon SNS notification and sends an alert to the subscribed email address.
-
-The project also includes a Linux shell script for checking basic server health information such as CPU, memory, disk usage, uptime, and Nginx status.
-
-## Architecture
-
-```text
-                    AWS Cloud
-                        |
-                        v
-                +---------------+
-                |  EC2 Ubuntu   |
-                |   Web Server   |
-                +-------+-------+
-                        |
-              CPU / Server Metrics
-                        |
-                        v
-                +---------------+
-                |  CloudWatch   |
-                +-------+-------+
-                        |
-                 CloudWatch Alarm
-                        |
-                        v
-                +---------------+
-                |      SNS      |
-                +-------+-------+
-                        |
-                        v
-                   Email Alert
-```
-
+www.linkedin.com/in/bijay-chand
 ## AWS Services Used
 
 * Amazon EC2
